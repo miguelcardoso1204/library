@@ -23,7 +23,9 @@ header {
   background-color: var(--white);
   height: 90px;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   box-shadow: 3px 3px 10px -8px black;
   z-index: 1;
 }
@@ -32,6 +34,21 @@ header h1 {
   margin-left: 40px;
   text-decoration: underline;
   font-size: 38px;
+}
+
+header button {
+  border: 3px solid black;
+  padding: 0 15px;
+  border-radius: 30px;
+  height: 40px;
+  background-color: white;
+  margin-right: 40px;
+  font-size: 14px;
+}
+
+header button:hover {
+  background-color: black;
+  color: white;
 }
 
 body > div {
