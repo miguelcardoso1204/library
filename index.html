@@ -10,9 +10,9 @@
   <body>
     <header>
       <h1>Your Library.</h1>
-      <button>+ Add Book</button>
+      <button id="add-book-button">+ Add Book</button>
     </header>
-    <div>
+    <div class="grid">
       <div>
         <h4>Crime and Punishment</h4>
         <h5>Fyodor Dostoevsky</h5>
@@ -20,10 +20,29 @@
         <button>Read</button>
         <button>Delete</button>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
     </div>
+    <div class="div-form" id="div-form" style="display: none">
+      <h3>Create Book</h3>
+      <form id="form" onsubmit="" method="post">
+        <div>
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" required />
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" required />
+        </div>
+        <div class="pages_div">
+          <input type="number" name="pages" id="pages" min="1" required />
+          <label for="pages"> pages</label>
+        </div>
+        <div class="read_div">
+          <label for="read">Read?</label>
+          <input type="checkbox" name="read" id="read" value="read" />
+        </div>
+      </form>
+      <button type="submit" form="form">+ Add Book</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
